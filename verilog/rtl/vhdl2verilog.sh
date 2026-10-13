@@ -17,6 +17,7 @@ mkdir -p build
 
 # Analyze sources
 ghdl -a --std=93c --work=counter --workdir=build -Pbuild \
+  "$RTL/sram.vhd" \
   "$RTL"/constants_p.vhd \
   "$RTL"/counter_ea.vhd \
   "$RTL"/counter_board.vhd
